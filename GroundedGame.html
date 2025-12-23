@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://kit.fontawesome.com/b761556490.js" crossorigin="anonymous"></script>
+        <!-- Initalise the website with the title for it -->
+        <title>Grounded | ReVibration Studios</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+
+        <!-- Banner -->
+        <div>
+            <img class="banner" src="Images/Web Banner.png">
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="topnav">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li> 
+            <li><a href="Support.html">Support</a></li>
+            <a href="Cart.html"><img class="basket" src="Images/shopping-cart.png"></a>
+        </ul>
+        <canvas class="animatedCanvas" id="animatedCanvas"></canvas>
+        <!-- Title of the game -->
+        <h1>Grounded</h1>
+
+        <!-- Cover art of the game -->
+        <div class="c-game">
+        <img class = "gameImage" src="./Images/Grounded Cover Art.jpg">
+        </div>
+
+        <!-- Description of the game provided by their studio-->
+        <div class="c-game">
+        <p class = "gameDescription">
+            The world is a vast, beautiful, and dangerous place – 
+            especially when you have been shrunken to the size of an ant. Explore, build, and 
+            survive together in this first person, multiplayer, survival-adventure. 
+            Can you thrive alongside the hordes of giant insects, fighting to survive the perils 
+            of the backyard?
+        </p>
+        </div>
+
+        <!--video trailer of the game -->
+        <div class="c-game">
+            <!-- This is another container specifically for the video-->
+            <div class="c-video">
+                <!-- This is the actual video tag and where the source is-->
+                <video class="video" src="./Videos/yt1s.com - Grounded  Official Story Trailer.mp4" type="video/mp4"></video>
+                <!-- This is the section for the controls -->
+                <div class="controls">
+                    <!-- This is the completion bar -->
+                    <div class="orange-bar">
+                        <div class="orange-completion"></div>
+                    </div>
+                        <!-- Lastly, these are the buttons -->
+                        <div class="buttons">
+                            <button class="playPause" id="play-pause"></button>
+                            <button class="stop" id="stop"></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System requirements of the game provided by the studio -->
+        <div class="c-game">
+        <div class = "systemRequirements">
+            <h2>System Requirements Minimum</h2>
+            <p>OS: Windows 7 (SP1) 64bit </p>
+            <p>Memory: 4GB</p>
+            <p>Storage Space: 8GB</p>
+            <p>Processor: Intel Core i3-3225</p>
+            <p>Grahpics Card: NVIDIA® GeForce® GTX 650 Ti</p>
+        </div>
+        </div>
+
+        <!-- This is the gallery for the game-->
+        <div class="c-game">
+            <img class="gameImage" id="GroundedGallery">
+        </div>
+
+        <!-- Add to cart button -->
+        <div class="c-game">
+        <h1 class = "cart">Add To Cart</h1>
+        </div>
+
+        <!-- Advertisment section -->
+        <h1 class="centerTitles">Make Sure To Check Out The Game Below</h1>
+        <div class="c-game">
+            <a id="advertLink"><img class="advertImage" id="advertImage"></a>
+        </div>
+        
+        <footer>
+            <!-- This is a footer where all of the icons are links to social media -->
+                <div class="icons">
+                <a href="https://en-gb.facebook.com/"><img class="social-icon" src="Images/Facebook Icon.png"></a>
+                <a href="https://www.instagram.com/"><img class="social-icon" src="Images/Instagram icon.png"></a>
+                <a href="https://www.youtube.com/"><img class="social-icon" src="Images/YouTube Icon.png"></a>
+                <a href="https://twitter.com/?lang=en-gb"><img class="social-icon" src="Images/Twitter Icon.png"></a>
+            </div>
+
+                <div class="settings">
+                    <!-- This is the section where the background customisation occurs -->
+                    <h3>Background Colour Customisation</h3>
+                    <select class = "selector" id = "backgroundChange">
+                        <option value="#B3936F">Light Brown</option>
+                        <option value="red">Red</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                    </select>
+    
+                    <!-- These are the setting for the font size-->
+                    <h3>Font Size Customisation</h3>
+                    <select class="selector" id = "fontChange">
+                        <option value="16px">16 (default) </option>
+                        <option value="8px">8</option>
+                        <option value="10px">10</option>
+                        <option value="12px">12</option>
+                        <option value="14px">14</option>
+                        <option value="18px">18</option>
+                        <option value="24px">24</option>
+                        <option value="30px">30</option>
+                        <option value="36px">36</option>
+                        <option value="48px">48</option>
+                    </select>
+                </div>
+    
+            </footer>
+            <!-- This is where the javascript is linked to the html-->
+            <script src="main.js"></script>
+    </body>
+</html>

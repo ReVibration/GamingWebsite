@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Initalise the website and give the website a title -->
+        <title>ReVibration Studios Products</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+
+        <!-- Banner -->
+        <div>
+            <img class="banner" src="Images/Web Banner.png">
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="topnav">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li> 
+            <li><a href="Support.html">Support</a></li>
+            <a href="Cart.html"><img class="basket" src="Images/shopping-cart.png"></a>
+        </ul>
+        
+        <canvas class="animatedCanvas" id="animatedCanvas"></canvas>
+        <!-- This is the category title of that section -->
+        <h1>Popular</h1>
+
+        <!-- These are all of the games in that specific category -->
+        <div>
+            <ul class="GameList">
+                <li><a href="NoMansSkyGame.html"><img class = "game" src="./Images/No Man's Sky Cover Art.jpg"> </a></li>
+                <li><a href="MinecraftGame.html"><img class = "game" src="./Images/Minecraft cover art.jpg"> </a></li>
+                <li><a href="ForzaHorizon4Game.html"><img class = "game" src="./Images/518449-forza-horizon-4-windows-apps-front-cover.jpg"> </a></li>
+                <li><a href="OverwatchGame.html"><img class = "game" src="./Images/405165-overwatch-game-of-the-year-edition-playstation-4-front-cover.jpg"> </a></li>
+                <li><a href="WatchDogsLegionGame.html"><img class = "game" src="./Images/Watch Dogs Legion Cover Art.jpg"> </a></li>
+                <li><a href="GroundedGame.html"><img class = "game" src="./Images/Grounded Cover Art.jpg"> </a></li>
+            </ul>
+        </div>
+            
+        <footer>
+            <!-- This is a footer where all of the icons are links to social media -->
+                <div class="icons">
+                <a href="https://en-gb.facebook.com/"><img class="social-icon" src="Images/Facebook Icon.png"></a>
+                <a href="https://www.instagram.com/"><img class="social-icon" src="Images/Instagram icon.png"></a>
+                <a href="https://www.youtube.com/"><img class="social-icon" src="Images/YouTube Icon.png"></a>
+                <a href="https://twitter.com/?lang=en-gb"><img class="social-icon" src="Images/Twitter Icon.png"></a>
+            </div>
+
+                <div class="settings">
+                    <!-- This is the section where the background customisation occurs -->
+                    <h3>Background Colour Customisation</h3>
+                    <select class = "selector" id = "backgroundChange">
+                        <option value="#B3936F">Light Brown</option>
+                        <option value="red">Red</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                    </select>
+    
+                    <!-- These are the setting for the font size-->
+                    <h3>Font Size Customisation</h3>
+                    <select class="selector" id = "fontChange">
+                        <option value="16px">16 (default) </option>
+                        <option value="8px">8</option>
+                        <option value="10px">10</option>
+                        <option value="12px">12</option>
+                        <option value="14px">14</option>
+                        <option value="18px">18</option>
+                        <option value="24px">24</option>
+                        <option value="30px">30</option>
+                        <option value="36px">36</option>
+                        <option value="48px">48</option>
+                    </select>
+                </div>
+    
+            </footer>
+            <!-- This is where the javascript is linked to the html-->
+            <script src="main.js"></script>
+    </body>
+</html>

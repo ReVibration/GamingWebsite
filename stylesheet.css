@@ -1,0 +1,536 @@
+/* General Styles */
+
+/* This is where the background colour for the website is set.
+This also ensures that the font is roboto and that it is white.
+Lastly it removes any unnessary padding and margins for all sites */
+body {
+    background-color: #B3936F;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+/* This is where the banner get stylised where it ensures that there is
+no gap and also that the width will always be 100% no matter the resizing */
+.banner{
+  display: block;
+  width: 100%;
+  margin-bottom: -16px;
+}
+
+/* This sets the preset for each title. This gives each title a boarder
+with a very dark blue background. Next it changes the font and colour of it 
+Lastly is ensures that it big enough to fit content and that it is in the 
+middle*/
+h1{
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Audiowide', cursive;
+  color: #78ff91;
+  border: 5px solid #ff9a26;
+  background-color: #040b1b;
+  width: fit-content;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+/* These are the titles mainly seen in the about page where they are 
+the headings for each section. This only alters the font and colour */
+h2{
+  font-family: 'Audiowide', cursive;
+  color: #78ff91;
+}
+
+h3{
+  margin: 2%;
+}
+
+/*This sets the video it always be it's max width*/
+.video {
+  width:100%;
+}
+
+/*This is the video container which allows for resizablity and also make
+the position relative for the video controls rather the controls relying
+on the whole web page*/
+.c-video {
+  width:100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*This moves the controls up when the user is hovering*/
+.c-video:hover .controls{
+  transform: translateY(0);
+}
+
+/*This is the specific stylisation of the controls which ensures that the
+controls are in the right space*/
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  /*This moves the controls down if the user isn't hovering*/
+  transform: translateY(100%) translateY(-10px);
+  transition: all .2s;
+}
+
+/*This gives extra padding to the button section*/
+.buttons {
+  padding: 10px;
+}
+
+/*This does some general style to the buttons to remove the normal css*/
+.buttons button {
+  background: none;
+  border:0;
+  outline:0;
+  cursor: pointer;
+}
+
+/*This stylises the buttons further with the fonts, background colours
+and other features */
+.buttons button::before{
+  content: '\f144';
+  font-family: 'Font Awesome 5 Free';
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 28px;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*This section defines the buttons to the right unicode from font awesome*/
+.buttons button.stop::before {
+  content: '\f28d';
+}
+.buttons button.play::before {
+  content: '\f144';
+}
+.buttons button.pause::before {
+  content: '\f28b';
+}
+
+
+
+
+/*This is the bit of the orange bar that isn't filled in */
+.orange-bar{
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #040b1b;
+}
+
+/*This is the orange bar that is filled in*/
+.orange-completion{
+  height: 10px;
+  background-color: #ff9a26;
+}
+
+/* Footer */
+
+/* This ensures that the footer is at the bottom of the page
+that and that the background colour is really dark blue */
+footer{
+  margin-top: 5%;
+  padding: 1%;
+  background-color: #040b1b;
+  float: bottom;
+  width: 98%;
+}
+
+/*This is the container for the setting in the footer*/
+.settings{
+  display: inline-flex;
+  float: right;
+}
+
+/*This section is where the user can edit the background colour of
+the site*/
+.selector{
+  display: inline-block;
+  width: 30%;
+  padding: 1%;
+}
+
+/* These are the social media icons located inside the footer
+this makes sure that they are the right size and there is space 
+in between */
+.social-icon{
+  width: 3%;
+  padding: 1%;
+}
+
+.icons{
+  display: inline;
+}
+
+/* Navigation Bar */
+
+/* This is the general style of the navigation this ensures that
+the list has no default stylising and the background colour */
+ul.topnav {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    background-color: #040b1b;
+  }
+
+/* This makes it so that each element of the menu is inline and 
+horizontal. This also creates padding around each element */
+ul.topnav li {
+    display: inline-block;
+    padding: 1% 2% 1% 2%;
+  }
+  
+/*This is each elements text, so this section changes the font,
+the colour, creates more padding and removes any text decoration */
+ul.topnav li a {
+    font-family: 'Audiowide', cursive;
+    color: #ff9a26;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+/* This section is responsible for when the mouse hovers over an 
+element in which it reverts the colours */
+ul.topnav li a:hover{
+    background-color: #ff9a26;
+    color: #040b1b;
+  }
+  
+ /*This is the basket in the navigation menu which is just a 
+ picture so this ensures the correct size and makes it go to the 
+ right */ 
+.basket{
+    width: 8%;
+    float: right;
+  }
+
+/* Home Page */
+
+
+
+/*This is the featured product container which holds the video and the
+cover art for the game.*/
+.featuredProduct{
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*This is the container for the featured cover art*/
+.c-coverArt{
+  max-height: 400px;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+}
+
+/* This is the cover art of the featured game. This just ensures 
+the right size and provides it will extra padding used as positioning*/
+.featuredCoverArt{
+  position: relative;
+  height:100%;
+  width: 100%;
+  padding-left: 1%;
+}
+
+/* About Us */
+
+/* This is a google map to show where the business is based.
+This stylising helps position and also sets the dimesions*/
+.businessMap{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 500px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* This creates a text box for the business description with the
+questions and answers on the about us page */
+.businessDescription{
+  background-color: #040b1b;
+  border: 5px solid #ff9a26 ;
+  margin: 1%;
+  padding: 1%;
+}
+
+/* Similary to the business description this creates a text box
+however this text box is as wide as the website whereas the other
+is 70% due to the business map*/
+.Biography{
+  background-color: #040b1b;
+  border: 5px solid #ff9a26 ;
+  margin: 1%;
+  padding: 1%;
+}
+
+/* This is the profile picture of the employee. This sets the 
+size and ensures that it stays on the right */
+.profilePic{
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Products Page */
+
+/* This is the list of games on the product page. This section
+removes any default stylising of the list*/
+.GameList{
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+/* These are the game elements in the game list on the product
+page. This ensures that they start on the left, that the image
+is always going to fit the box created and it sets the default 
+size / padding for each game */
+.game{
+  float: left;
+  padding: 2%;
+  padding-left: 3%;
+  text-align: center;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+}
+
+
+/*Support Page*/
+
+/* This is the input areas on the support page. This creates the 
+boarder and the padding around the boxes. It also allows the inputs
+to be resizeable vertically */
+input[type=text], select, textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/*This is the submit button for the the support page this changes
+the cursor and also sets the colour for the button*/
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*This section defines what happens when the cursor is hovering
+over the button */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*This is the general stylising for the rest of the contact
+form changing the font, colours and sizing for it */
+.contactForm {
+  font-family: 'Audiowide', cursive;
+  color: #78ff91;
+  border-radius: 5px;
+  background-color: #040b1b;
+  padding: 20px;
+  width: 50%;
+  border: 5px solid #ff9a26;
+  margin: 0 auto;
+}
+
+/*Product Pages*/
+
+/*This is container for all of the items in the game product page where
+it makes sure that every thing is centred if it's in this container*/
+.c-game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*This is the cover art image of the game that is presented.
+This sets the image to fill the section that is determined.
+Next it has made sure that the image floats to the left */
+.gameImage{
+  width: 100%;
+  max-width: 800px;
+  padding: 1%;
+}
+
+/* This is the add to cart button that at the momment it is just
+a style. This makes sure that the colour is correct and that the
+button is the correct place */
+.cart{
+  border: 4px solid #78ff91;
+  background-color: #4d5cff;
+  display: inline-block;
+  padding: 1%;
+  margin: 1%;
+  width: 95%;
+  max-width: 800px;
+}
+
+/* This is the description of the game. This ensures that the 
+colours are set correctly, that it doesnt overlap and the sizing
+of it.*/
+.gameDescription{
+  border: 4px solid #ff9a26;
+  background-color: #040b1b;
+  display: inline-block;
+  width: 95%;
+  max-width: 800px;
+  padding: 1%;
+  margin: 1%;
+}
+
+/* These are the system requirements for the game. This is
+ensures that it's on the right and it sets the different 
+colours */
+.systemRequirements{
+  display: block;
+  background-color: #040b1b;
+  border: 4px solid #ff9a26;
+  padding: 1%;
+  width: 95%;
+  max-width: 800px;
+  margin: 1%;
+}
+
+/*This is the style of the advert at the end of the
+web page where this ensures that the image always fits*/
+.advertImage{
+  max-width: 800px;
+  object-fit: cover;
+  max-height: 400px;
+  padding: 1%;
+}
+
+/* This is the container cart */
+.c-cart{
+  margin:1%;
+  padding:1%;
+  background-color: #040b1b;
+  border: 4px solid #ff9a26;
+}
+
+/* This cart row of the each item */
+.cart-row{
+  display: flex;
+}
+
+/* This is the row column for each item */
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #ff9a26;
+  margin-right: 1.5em;
+}
+
+/*This is the cart item */
+.cart-item {
+  width: 45%;
+}
+
+/*This is the cart price */
+.cart-price {
+  width: 20%;
+}
+
+/*This is the cart quantity */
+.cart-quantity {
+  width: 35%;
+}
+
+/* This is each button */
+.btn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* This is what happens when people are hovering over buttons */
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* This sets the shop item margin */
+.shop-item {
+  margin: 30px;
+}
+
+/* This is title of each items */
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* This is the game cover art */
+.shop-item-image {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+}
+
+/* These are the span tag for the price and the add to cart button */
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+/* This is the indivdual price css for the shop items */
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+  font-weight: bold;
+}
+
+/* This is so that the shop items will generate in the right spaces */
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* This will be the section that will style the currency converter */
+.currencyConverter {
+  width: 10%;
+  margin-left: 70%;
+
+}
+ /*This is the animation css*/
+.animatedCanvas {
+  width: 100%;
+  height: 30px;
+  padding: 1px;
+}
